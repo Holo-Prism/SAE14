@@ -31,4 +31,13 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    
+    #[Route('/competence', name: 'app_competence')]
+    public function competence(): Response
+    {
+        return $this->render('/competence.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }
