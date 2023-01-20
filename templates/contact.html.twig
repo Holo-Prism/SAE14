@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+
+<br><br>
+
+<center><div class="col-sm-6 bg-secondary text-primary">
+
+    <blockquote class="blockquote text-primary">
+        <p class="mb-0"><small><p><h4><br>Télecharger mon CV</h4></p></small></p>
+    </blockquote>
+
+    <div class="form-group">
+    <label class="col-form-label mt-4" for="inputDefault">Nom</label>
+    <input type="text" class="form-control" placeholder="..." id="inputDefault">
+    </div>
+    
+    <div class="form-group">
+    <label class="col-form-label mt-4" for="inputDefault">Prénom</label>
+    <input type="text" class="form-control" placeholder="..." id="inputDefault">
+    </div>
+    <div class="form-group">
+    <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Adresse mail</label>
+    <input class="form-control form-control-sm" type="text" placeholder="your mail" id="inputSmall">
+    </div>
+    <div class="form-group">
+    <label class="form-label mt-4"></label>
+    <div class="form-group">
+        <button class="btn btn-primary" type="button" id="button-addon2">Download</button>
+        </div>
+        <br>
+    </div>
+    </div>
+</div><center>
+
+{% endblock %}
