@@ -48,4 +48,12 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    #[Route('/flex', name: 'app_flex')]
+    public function flex(): Response
+    {
+        return $this->render('/flex.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }
