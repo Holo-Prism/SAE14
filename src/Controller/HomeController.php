@@ -49,4 +49,12 @@ class HomeController extends AbstractController
         ]);
     }
 
+    #[Route('/plus', name: 'app_plus')]
+    public function plus(): Response
+    {
+        return $this->render('/plus.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
 }
