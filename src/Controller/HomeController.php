@@ -16,14 +16,6 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/page1', name: 'app_page1')]
-    public function page1(): Response
-    {
-        return $this->render('/page1.html.twig', [
-            'controller_name' => 'HomeController',
-        ]);
-    }
-
     #[Route('/page2', name: 'app_page2')]
     public function page2(): Response
     {
